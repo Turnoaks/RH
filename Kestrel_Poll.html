@@ -1,64 +1,26 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 <style>
+html, body { height: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 * { box-sizing: border-box; }
-body{font-family:'Segoe UI', Tahoma, sans-serif; background:#f0f2f5; padding:10px; margin:0; color:#333;}
+body{font-family:sans-serif; background:#f0f2f5; padding:10px; margin:0; color:#333; min-height: 100vh;}
 .container{width:100%; max-width:1000px; margin:auto; background:white; padding:15px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-h1{text-align:center; color:#2e7d32; margin-top:0; font-size:1.6em;}
-.poll-grid{display:grid; grid-template-columns: 1fr; gap:15px; margin-top:15px;}
-@media (min-width: 768px) {
-  .poll-grid { grid-template-columns: 1fr 1fr; }
-  .container { padding: 30px; border-radius: 20px; }
-  h1 { font-size: 2.2em; }
-}
-.entry{background:#fafafa; padding:12px; border-radius:10px; border:1px solid #eee; overflow:hidden;}
-.label-row{display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; font-weight:bold;}
-.name-tag{display:flex; align-items:center; gap:6px; font-size:1em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.votes-count{color:#666; font-size:0.85em; flex-shrink:0;}
+h1{text-align:center; color:#2e7d32; font-size:1.4em; margin-bottom:15px;}
+.poll-grid{display:grid; grid-template-columns: 1fr; gap:12px;}
+@media (min-width: 768px) { .poll-grid { grid-template-columns: 1fr 1fr; } h1 { font-size: 2em; } }
+.entry{background:#fafafa; padding:12px; border-radius:10px; border:1px solid #eee;}
+.label-row{display:flex; justify-content:space-between; align-items:center; margin-bottom:5px; font-weight:bold;}
 .bar-bg{background:#e0e0e0; height:10px; border-radius:5px; overflow:hidden;}
-.bar-fill{height:100%; border-radius:5px; transition:width 1s ease-in-out;}
-.rank-badge{background:#2e7d32; color:white; padding:1px 6px; border-radius:10px; font-size:0.65em; margin-left:5px; text-transform:uppercase;}
-.footer{margin-top:30px; text-align:center; padding-top:15px; border-top:1px solid #eee; color:#666; font-size:0.9em;}
-.closed-banner{background:#d32f2f; color:white; padding:12px; border-radius:8px; font-weight:bold; margin-top:15px;}
+.bar-fill{height:100%; border-radius:5px; transition:width 1s;}
+.footer{margin-top:25px; text-align:center; color:#666; font-size:0.85em; padding-bottom: 20px;}
 </style></head><body><div class='container'>
-<h1>🗳️ Kestrel Naming Leaderboard</h1>
-<div class='poll-grid'>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'>🏆 Penny </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#ffca28;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'>🥈 Kimmy </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#b0bec5;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'>🥉 Ellie </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#bcaaa4;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'> Kea </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'> Kizzie </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'> Molly </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'> Betsy </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'> Tilly </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
-<div class='entry'><div class='label-row'>
-<div class='name-tag'> Amber </div>
-<div class='votes-count'>0 v</div></div>
-<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
-</div><div class='footer'>
-<p>Vote in chat: <b>!vote [Name]</b></p><p>⏱️ Closes: <b>26 Apr, 21:00</b></p>
-</div></div></body></html>
+<h1>🗳️ Kestrel Naming</h1><div class='poll-grid'>
+<div class='entry'><div class='label-row'><span>🏆 Kea</span><span>1 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:100%; background:#ffca28;'></div></div></div>
+<div class='entry'><div class='label-row'><span>🥈 Penny</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+<div class='entry'><div class='label-row'><span>🥉 Kimmy</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+<div class='entry'><div class='label-row'><span>Ellie</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+<div class='entry'><div class='label-row'><span>Kizzie</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+<div class='entry'><div class='label-row'><span>Molly</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+<div class='entry'><div class='label-row'><span>Betsy</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+<div class='entry'><div class='label-row'><span>Tilly</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+<div class='entry'><div class='label-row'><span>Amber</span><span>0 v</span></div><div class='bar-bg'><div class='bar-fill' style='width:0%; background:#4caf50;'></div></div></div>
+</div><div class='footer'><p>Vote: <b>!vote [Name]</b> | Ends: 26 Apr, 21:00</p></div></div></body></html>
