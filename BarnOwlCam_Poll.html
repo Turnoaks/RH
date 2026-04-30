@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+<style>
+html, body { height: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+* { box-sizing: border-box; }
+body{font-family:'Segoe UI', Tahoma, sans-serif; background:#f0f2f5; padding:10px; margin:0; color:#333; min-height: 100vh;}
+.container{width:100%; max-width:1000px; margin:auto; background:white; padding:15px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+h1{text-align:center; color:#2e7d32; font-size:1.6em; margin-bottom:5px;}
+.subtitle{text-align:center; color:#666; font-size:1em; margin-bottom:20px; font-weight:bold;}
+.poll-grid{display:grid; grid-template-columns: 1fr; gap:12px;}
+@media (min-width: 768px) { .poll-grid { grid-template-columns: 1fr 1fr; } h1 { font-size: 2em; } }
+.entry{background:#fafafa; padding:12px; border-radius:10px; border:1px solid #eee;}
+.name-row{display:flex; justify-content:space-between; align-items:center; font-weight:bold; font-size: 1.1em;}
+.bar-bg{background:#e0e0e0; height:12px; border-radius:6px; overflow:hidden; margin-top: 8px;}
+.bar-fill{height:100%; border-radius:6px; transition:width 0.5s ease-out;}
+.winner-banner{background:#4caf50; color:white; padding:15px; border-radius:10px; text-align:center; font-size:1.5em; font-weight:bold; margin-bottom:20px; animation: pulse 2s infinite;}
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+</style></head><body><div class='container'>
+<h1>🦉 Owlet Naming Race</h1>
+<div class='subtitle'>First name to 5 votes wins!</div>
+<div class='poll-grid'>
+<div class='entry'><div class='name-row'>
+<span>Bean</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Berry</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Biscuit</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Butter</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Barley</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Bramble</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Breeze</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Buff</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Button</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Blink</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Bobbin</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Bingo</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Bop</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Bowie</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Biff</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Bliss</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Birch</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Blaze</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Boots</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+<div class='entry'><div class='name-row'>
+<span>Bumble</span><span style='color:#666; font-size:0.85em;'>0 / 5</span></div>
+<div class='bar-bg'><div class='bar-fill' style='width:0%; background:#2196f3;'></div></div></div>
+</div></div></body></html>
